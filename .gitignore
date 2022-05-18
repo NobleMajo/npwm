@@ -1,0 +1,7 @@
+.store
+node_modules
+dist
+global-config.json
+
+!.keep
+!.gitkeep

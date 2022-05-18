@@ -1,0 +1,50 @@
+{
+  "name": "npwm",
+  "version": "0.0.1",
+  "description": "Node package workspace manager",
+  "main": "dist/index.js",
+  "author": "majo418",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "node",
+    "typescript",
+    "cli",
+    "cmd",
+    "npm",
+    "workspace",
+    "ws",
+    "npm",
+    "git"
+  ],
+  "bin": {
+    "wsscan": "./bin/npwm",
+    "wsscandev": "./bin/npwm"
+  },
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json",
+    "start": "ts-node src/index.ts",
+    "exec": "node dist/index.js",
+    "test": "mocha --require ts-node/register src/test/**/*.test.ts",
+    "build": "npm run tsc",
+    "start:watch": "nodemon -w ./src -x \"npm run start\" --ext *.ts",
+    "build:watch": "nodemon -w ./src -x \"npm run build\" --ext *.ts",
+    "test:watch": "nodemon -w ./src -x \"npm run test\" --ext *.ts",
+    "exec:watch": "nodemon -w ./dist -x \"npm run exec\"",
+    "dev": "npm run start:watch"
+  },
+  "devDependencies": {
+    "@types/chai": "^4",
+    "@types/mocha": "^8",
+    "@types/node": "^17.0.23",
+    "chai": "^4",
+    "mocha": "^9",
+    "nodemon": "^2.0.13",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "cmdy": "^1.2.2",
+    "majotools": "^1.2.8"
+  }
+}

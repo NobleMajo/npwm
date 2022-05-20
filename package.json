@@ -18,8 +18,8 @@
     "git"
   ],
   "bin": {
-    "wsscan": "./bin/npwm",
-    "wsscandev": "./bin/npwm"
+    "npwm": "./bin/prod",
+    "npwmdev": "./bin/dev"
   },
   "scripts": {
     "tsc": "tsc -p tsconfig.json",

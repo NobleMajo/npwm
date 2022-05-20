@@ -22,6 +22,7 @@
 - [contribution](#contribution)
 
 # about  
+Work in progrss!
 A workspace scanning tool to fine outdated npm dependencies.
 
 # npm scripts
